@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 4vw;
+}
+
+body {
+  background-color: #1A1A1C;
+  width: 100%;
+  min-height: 100vh;
+}
+body .aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 16vw;
+  height: 100vh;
+  padding: 1vw;
+  position: fixed;
+  overflow: visible;
+}
+body .aside .icon-top {
+  width: 100%;
+  height: 12vh;
+  position: relative;
+}
+body .aside .icon-top img {
+  margin-top: 1vw;
+  width: 7vw;
+}
+body .aside .icon-top span {
+  position: absolute;
+  top: 2vw;
+  right: 0;
+  font-size: 1.6vw;
+  color: #E0C28E;
+  font-weight: 900;
+}
+body .aside .citys .city {
+  padding: 0.5vw 1vw;
+  margin: 1vw;
+  font-size: 1.7vw;
+  border-radius: 5px;
+  border: 1px solid #f1b753;
+  color: #f1b753;
+  background-color: #000;
+  font-weight: 900;
+  text-align: center;
+}
+body .aside .citys .city:hover {
+  background-color: #4b2c04;
+}
+body .aside .icon-bottom img {
+  width: 15vw;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .aside-right {
+  right: 0;
+  top: 0;
+}
+body .aside-right .this-time {
+  font-weight: 900;
+  color: #f1b753;
+  font-size: 1.8vw;
+  background-image: url(./images/icon-back-clock.png);
+  background-size: cover;
+  width: 9vw;
+  height: 9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .aside-left {
+  left: 0;
+  top: 0;
+}
+body .container {
+  width: 68vw;
+  padding: 0;
+  margin: 0 16vw;
+  border-radius: 5px;
+  border: 1px solid #f1b753;
+  color: #f1b753;
+}
+body .container .container-title {
+  position: relative;
+  height: 12vw;
+  width: 68vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .container .container-title img {
+  position: absolute;
+  top: -8px;
+  height: 100%;
+  width: auto;
+}
+body .container .tables {
+  display: flex;
+  justify-content: space-around;
+}
+body .container .tables .table {
+  text-align: center;
+  border: 1px solid #f1b753;
+  background-color: #f3a826;
+  color: #f1b753;
+  border-spacing: 1px;
+}
+body .container .tables .table * {
+  background-color: #000;
+}
+body .container .tables .table .friday *, body .container .tables .table .thead-dark * {
+  font-family: "Patua One", cursive;
+  background-color: #f1b753;
+  color: #000;
+}
+body .container .tables .table * {
+  padding: 0.2vw;
+}
+body .container .tables .today {
+  background-color: #f1b753;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

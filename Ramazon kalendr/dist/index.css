@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url(./images/fon3.jpg);
+  display: flex;
+  justify-content: space-around;
+}
+body .citys {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+}
+body .citys .city {
+  height: calc(100vh/21);
+  align-self: stretch;
+  font-weight: 900;
+  background-color: #ffffffaa;
+  padding: 0.8vh;
+  font-size: 2.5vh;
+  border-bottom: 1px solid rgba(231, 140, 3, 0.877);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .citys .city:hover {
+  background-color: #ff7e05c5;
+}
+body .container {
+  margin-left: 15vw;
+  display: flex;
+  flex-direction: column;
+}
+body .container .text-success {
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  margin: 4vh 0;
+}
+body .container .text-success .icon {
+  width: 4vw;
+  margin: 0 1vw;
+}
+body .container .tables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f39111d0;
+  border-radius: 7px;
+  box-shadow: 1px 0 6px #262626;
+}
+body .container .table {
+  max-width: 35vw;
+  margin: 0.2vw;
+  border-spacing: 0;
+}
+body .container .table .thead-dark * {
+  border-radius: 5px;
+  box-shadow: 0 0 5px #fff;
+}
+body .container .table .thead-dark tr {
+  color: #fff;
+  border-radius: 4px;
+}
+body .container .table .thead-dark tr th:nth-child(1) {
+  background-color: #f50909;
+}
+body .container .table .thead-dark tr th:nth-child(2) {
+  background-color: #07e407;
+}
+body .container .table .thead-dark tr th:nth-child(3) {
+  background-color: darkred;
+}
+body .container .table .thead-dark tr th:nth-child(4) {
+  background-color: #0be2a1;
+}
+body .container .table .thead-dark tr th:nth-child(5) {
+  background-color: #5a0070;
+}
+body .container .table tbody tr {
+  border-radius: 5px;
+}
+body .container .table tbody tr:nth-child(even) {
+  background-color: rgba(231, 140, 2, 0.918);
+}
+body .container .table tbody .row {
+  color: #b30404;
+}
+body .container .table tbody .day {
+  color: #9e0484;
+  font-weight: 800;
+}
+body .container .table tbody tr td:nth-child(3) {
+  color: darkred;
+  font-weight: 600;
+}
+body .container .table tbody tr td:nth-child(4) {
+  color: #078db6;
+  font-weight: 900;
+}
+body .container .table tbody tr td:nth-child(5) {
+  color: #5a0070;
+  font-weight: 900;
+}
+body .container .table * {
+  padding: 0.3vw;
+  font-size: 1.7vw;
+}
+body .this-day {
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+}
+body .this-day h1 {
+  -webkit-text-fill-color: rgba(255, 0, 170, 0.815);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #dd05dd;
+  text-shadow: 1px 1px #ffffff;
+}
+body .this-time {
+  position: absolute;
+  top: 0vw;
+  right: 1vw;
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.5vw;
+  background-image: url(./images/islam-clock.png);
+  background-size: cover;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 4vw;
+}
+
+body{
+    background-color: #1A1A1C;
+    width: 100%;
+    min-height: 100vh;
+   
+
+    .aside{display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 16vw;
+        height: 100vh;
+        padding: 1vw;
+        position: fixed;
+        overflow: visible;
+        
+        .icon-top{
+            width: 100%;
+            height: 12vh;
+            position: relative;
+            img{margin-top: 1vw;
+                width: 7vw;
+               
+            }
+            span{position: absolute;
+                top:2vw;
+                right: 0;
+                font-size: 1.6vw;
+                color: #E0C28E;
+                font-weight: 900;
+               
+            }
+        }
+        
+        .citys{
+            .city{
+                padding: 0.5vw 1vw;
+                margin: 1vw;
+                font-size: 1.7vw;
+                border-radius: 5px;
+                border: 1px solid #f1b753;
+                color: #f1b753;
+                background-color: #000;
+                font-weight: 900;
+                text-align: center;
+                &:hover{
+                    background-color: rgb(75, 44, 4);
+                }
+            }
+        }
+
+        .icon-bottom{
+            
+            img{
+                width: 15vw;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+
+
+    }
+    .aside-right{
+        right: 0;
+        top: 0;
+        .this-time{
+            font-weight: 900;
+            color: #f1b753;
+            font-size: 1.8vw;
+            background-image: url(./images/icon-back-clock.png);
+            background-size: cover;
+            width: 9vw;
+            height: 9vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .aside-left{
+        left: 0;
+        top: 0;
+    }
+
+
+
+
+    .container{width: 68vw;
+        padding: 0;
+        margin: 0 16vw;
+        border-radius: 5px;
+        border: 1px solid #f1b753;
+        color: #f1b753;
+
+        .container-title{
+            position: relative;
+            height: 12vw;
+            width: 68vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                position: absolute;
+                top: -8px;
+                height: 100%;
+                width: auto;
+            }
+            
+        }
+        .tables{
+            display: flex;
+            justify-content: space-around;
+            .table{
+                text-align: center;
+                border: 1px solid #f1b753;
+                background-color: #f3a826;
+                color: #f1b753;
+                border-spacing: 1px;
+                *{
+                    background-color: #000;
+                  
+                }
+                .friday *, .thead-dark *{
+                    font-family: 'Patua One', cursive;
+                    background-color: #f1b753;
+                    color: #000;
+                }
+                    *{
+                 padding: .2vw;
+                   }
+            }
+        .today {
+            background-color: #f1b753;
+            color: #fff;
+        }
+        }
+    }
+}

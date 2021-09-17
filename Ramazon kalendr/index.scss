@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(./images/fon3.jpg);
+    display: flex;
+    justify-content: space-around;
+    .citys {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 15vw;
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-direction: column;
+        .city {
+            height: calc(100vh/21);
+            align-self: stretch;
+            font-weight: 900;
+            background-color: #ffffffaa;
+            padding: .8vh;
+            font-size: 2.5vh;
+            border-bottom: 1px solid rgba(231, 140, 3, 0.877);
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            &:hover {
+                background-color: #ff7e05c5;
+            }
+        }
+    }
+    .container {
+        margin-left: 15vw;
+        display: flex;
+        flex-direction: column;
+        .text-success {
+            font-size: 4vw;
+            display: flex;
+            align-items: center;
+            margin: 4vh 0;
+            .icon {
+                width: 4vw;
+                margin: 0 1vw;
+            }
+        }
+        .tables {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f39111d0;
+            border-radius: 7px;
+            box-shadow: 1px 0 6px #262626;
+        }
+        .table {
+            max-width: 35vw;
+            margin: .2vw;
+            border-spacing: 0;
+            .thead-dark {
+                * {
+                    border-radius: 5px;
+                    box-shadow: 0 0 5px #fff;
+                }
+                tr {
+                    color: #fff;
+                    border-radius: 4px;
+                    th:nth-child(1) {
+                        background-color: rgb(245, 9, 9);
+                    }
+                    th:nth-child(2) {
+                        background-color: rgb(7, 228, 7);
+                    }
+                    th:nth-child(3) {
+                        background-color: darkred;
+                    }
+                    th:nth-child(4) {
+                        background-color: rgb(11, 226, 161);
+                    }
+                    th:nth-child(5) {
+                        background-color: rgb(90, 0, 112);
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    border-radius: 5px;
+                }
+                tr:nth-child(even) {
+                    background-color: rgba(231, 140, 2, 0.918);
+                }
+                .row {
+                    color: rgb(179, 4, 4);
+                }
+                .day {
+                    color: rgb(158, 4, 132);
+                    font-weight: 800;
+                }
+                tr {
+                    td:nth-child(3) {
+                        color: darkred;
+                        font-weight: 600;
+                    }
+                    td:nth-child(4) {
+                        color: rgb(7, 141, 182);
+                        font-weight: 900;
+                    }
+                    td:nth-child(5) {
+                        color: rgb(90, 0, 112);
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+        .table * {
+            padding: .3vw;
+            font-size: 1.7vw;
+        }
+    }
+    .this-day {
+        position: absolute;
+        bottom: 1vw;
+        right: 1vw;
+        h1 {
+            -webkit-text-fill-color: rgba(255, 0, 170, 0.815);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(221, 5, 221);
+            text-shadow: 1px 1px #ffffff;
+        }
+    }
+    .this-time {
+        position: absolute;
+        top: 0vw;
+        right: 1vw;
+        font-weight: 900;
+        color: #fff;
+        font-size: 1.5vw;
+        background-image: url(./images/islam-clock.png);
+        background-size: cover;
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
